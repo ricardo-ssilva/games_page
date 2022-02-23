@@ -1,0 +1,116 @@
+@charset "UTF-8";
+/* Padroes da pagina */
+:root {
+    --primary-color: #040517;
+    --light-color: #2d2f3d;
+    --dark-color: #000000;
+    
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(139, 139, 139);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+.left_right_content {
+    display: flex;
+}
+.left_content {
+    background-color:var(--primary-color);
+    height: 100vh;
+    min-width: 260px;
+    max-width: 260px;
+}
+.right_content {
+    flex: 5;
+    background-color: var(--light-color);
+}
+.left_container {
+    display: flex;
+    margin-top: 50px;
+}
+.title {
+    color: white;
+}
+.title_desc {
+    color: rgb(199, 199, 199);
+    font-size: 14px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.title_desc span {
+    font-size: 14px;
+}
+.left_menu {
+    margin-left: 60px;
+    margin-top: 130px;
+}
+
+
+/* conteudos da pagina  */
+.profile {
+    overflow: hidden;
+    margin-left: 25px;
+    max-width: 75px;
+    max-height: 75px;
+    margin-right: 20px;
+}
+.profile_img img {
+    width: 100%;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+.profile_img:hover img {
+    transform: scale(1.3);
+    border-radius: 20px
+}
+.profile_title {
+    margin-top: 18px;
+    cursor: pointer;
+}
+
+.profile_desc:hover {
+    color: white;
+}
+.menu_1, .menu_2 {
+    width: 130px;
+    border-top: solid 1px rgba(128, 128, 128, 0.425);
+}
+.menu li {
+    width: 150px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.menu li:first-child{
+    margin-top: 30px;
+}
+.menu li:last-child {
+    margin-bottom: 30px;
+}
+.menu li:hover, .active {
+    background-color: var(--light-color);
+    color: white;
+} 
+.search {
+    display: flex;
+    border-bottom: 1px solid #2d2f3d;
+    width: 140px;
+    padding-bottom: 3px;
+}
+.search span {
+    font-size: 20px;
+}
+.search_bar {
+    background-color: var(--primary-color);
+    border: none;
+    outline: none;
+    margin-left: 8px;
+    font-size: 17px;
+   
+}
