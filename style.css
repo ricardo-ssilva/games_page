@@ -109,7 +109,7 @@
     cursor: pointer;
 }
 
-.profile_desc:hover {
+.profile_desc:hover, .profile_desc:hover span{
     color: white;
 }
 .menu_1, .menu_2 {
