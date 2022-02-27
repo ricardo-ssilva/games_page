@@ -1,3 +1,6 @@
+function menu() {
+      
+}
 
 function scroll1() {
     document.querySelector('.games1').scrollTo({
