@@ -555,8 +555,19 @@ body {
 
     .games {
         display: flex;
-        overflow-x: hidden;
+        overflow-x: scroll;
         margin-left: 15px;
+    }
+    .games::-webkit-scrollbar {
+       display: none;
+        border: none;
+        border-radius: 10px;
+    }
+    .games::-webkit-scrollbar-thumb  {
+        display: none;
+        border: none;
+        border-radius: 10px;
+        
     }
     .game {
         margin-top: 8px;
