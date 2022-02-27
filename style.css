@@ -17,6 +17,11 @@
     text-decoration: none;
     list-style: none;
 }
+body {
+    max-width: 2080px;
+    margin: auto;
+    background-color: #0e0e13;
+}
 .left_right_content {
     display: flex;
 }
@@ -357,7 +362,7 @@
     max-height: 151px;
     min-width: 270px;
     min-height: 151px;
-    z-index: 0;
+   
 }
 .game_banner_content {
     display: flex;
@@ -417,4 +422,230 @@
 .games_group:hover .scroll {
     display: flex;
     cursor: pointer;
+}
+
+
+/* Responsividade */
+@media (max-width: 1024px){
+    .left_content {
+        display: none;
+    }
+}
+@media (max-width: 768px){
+    .banner {
+        width: 100%;
+        height: 220px;
+    } 
+    .games_group_title {
+        color: white;
+        font-size: 17px;
+        font-weight: 700;
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+
+    .games {
+        display: flex;
+        overflow-x: hidden;
+        margin-left: 15px;
+    }
+    .game {
+        margin-top: 12px;
+        margin-right: 15px;
+        margin-bottom: 10px;
+        min-width: 200px;
+        min-height: 113px;
+        max-width: 200px;
+        height: 143px;
+    }
+    .game:hover {
+        min-width: 200px;
+        min-height: 113px;
+        max-width: 200px;
+        height: 143px;
+        background-color: #101116;
+    }
+    .game_title {
+        color: white;
+        display: none;
+        font-size: 14px;
+        margin: 7px;
+    }
+    .game:hover .game_title {
+        display: block;
+    }
+    .game_banner_default {
+        overflow: hidden;
+        min-width: 200px;
+        min-height: 113px;
+        max-width: 200px;
+        height: 113px;
+    }
+    .game_banner {
+        background-size: contain;
+        min-width: 200px;
+        min-height: 113px;
+        max-width: 200px;
+        height: 113px;
+        transition: all 0.3s;
+    }
+
+    .game_banner:hover {
+        transform: scale(1.16);
+    }
+    .game_banner_overlap:hover {
+        background-color: rgba(0,0,0,0.85);
+        min-width: 200px;
+        min-height: 113px;
+        max-width: 200px;
+        height: 113px;
+       
+    }
+    .game_banner_content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 113px;
+    
+    }
+    .games_button {
+        width: 83px;
+        height: 25px;
+        font-size: 15px;
+        font-weight: 500;
+        display: none;
+        cursor: pointer;
+    }
+    .game_banner_content:hover .games_button {
+        display: flex;
+    }
+    .games_button:hover {
+       display: none;
+    }
+    .scroll {
+        display: none;
+    }
+    .scroll_button {
+       display: none;
+    }
+    .scroll_button:hover {
+        display: none;
+       
+    }
+    .scroll_button2 {
+        display: none;
+    }
+   
+
+
+}
+@media (max-width: 425px){
+    .banner {
+        width: 100%;
+        height: 150px;
+    } 
+    .games_group_title {
+        color: white;
+        font-size: 12px;
+        font-weight: 700;
+        margin-top: 4px;
+        margin-left: 10px;
+    }
+
+    .games {
+        display: flex;
+        overflow-x: hidden;
+        margin-left: 15px;
+    }
+    .game {
+        margin-top: 8px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        min-width: 130px;
+        min-height: 75px;
+        max-width: 130px;
+        height: 90px;
+    }
+    .game:hover {
+        min-width: 130px;
+        min-height: 75px;
+        max-width: 130px;
+        height: 90px;
+        background-color: #101116;
+    }
+    .game_title {
+        color: white;
+        display: none;
+        font-size: 10px;
+        margin: 2px;
+    }
+    .game:hover .game_title {
+        display: block;
+    }
+    .game_banner_default {
+        overflow: hidden;
+        min-width: 130px;
+        min-height: 75px;
+        max-width: 130px;
+        height: 75px;
+    }
+    .game_banner {
+        background-size: contain;
+        min-width: 130px;
+        min-height: 75px;
+        max-width: 130px;
+        height: 75px;
+        transition: all 0.3s;
+    }
+
+    .game_banner:hover {
+        transform: scale(1.16);
+    }
+    .game_banner_overlap:hover {
+        background-color: rgba(0,0,0,0.85);
+        min-width: 130px;
+        min-height: 75px;
+        max-width: 130px;
+        height: 75px;
+       
+    }
+    .game_banner_content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 75px;
+    
+    }
+    .games_button {
+        width: 83px;
+        height: 25px;
+        font-size: 15px;
+        font-weight: 500;
+        display: none;
+        cursor: pointer;
+    }
+    .game_banner_content:hover .games_button {
+        display: flex;
+    }
+    .games_button:hover {
+       display: none;
+    }
+    .scroll {
+        display: none;
+    }
+    .scroll_button {
+       display: none;
+    }
+    .scroll_button:hover {
+        display: none;
+       
+    }
+    .scroll_button2 {
+        display: none;
+    }
+   
+
+
 }
