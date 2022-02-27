@@ -1,5 +1,6 @@
-function menu() {
-      
+function teste() {
+    const nav = document.querySelector('.left_content')
+    nav.classList.toggle('responsive_menu')
 }
 
 function scroll1() {
