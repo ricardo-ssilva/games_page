@@ -400,6 +400,9 @@
     width: 50px;
     border-radius: 50%;
 }
+.scroll_button:hover {
+    background-color: #9edf30;
+}
 .scroll_button2 {
     padding: 0px;
     position: relative;
@@ -407,6 +410,9 @@
     height: 50px;
     width: 50px;
     border-radius: 50%;
+}
+.scroll_button2:hover {
+    background-color: #9edf30;
 }
 .games_group:hover .scroll {
     display: flex;
